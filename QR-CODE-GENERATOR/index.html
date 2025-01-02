@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="libs/qrcode.min.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <img src="/Users/atharv/Downloads/qr-code-free-png.webp" alt="Logo" class="logo">
+        <h1>QR Code Generator</h1>
+        <p>Create QR codes for any content like websites, emails, phone numbers, and more!</p>
+    </div>
+
+    <div class="container">
+        <h2>Select Content Type</h2>
+        <div class="button-group">
+            <button id="text-btn">Text</button>
+            <button id="url-btn">Website URL</button>
+            <button id="email-btn">Email</button>
+            <button id="phone-btn">Phone Number</button>
+            <button id="image-btn">Image URL</button>
+        </div>
+
+        <!-- Content Input field moved to the correct position above buttons -->
+        <div class="input-section">
+            <input type="text" id="content" placeholder="Enter your content here..." disabled />
+        </div>
+
+        <div class="actions">
+            <button id="generate-btn">Generate QR Code</button>
+            <button id="clear-btn">Clear</button>
+        </div>
+
+        <div id="qrcode" class="qr-code"></div>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ by [Atharv Suryavanshi]</p>
+        <p>Follow on Github for more projects <a href="https://github.com/atharv061166">Github</a></p>
+    </footer>
+</body>
+</html>
